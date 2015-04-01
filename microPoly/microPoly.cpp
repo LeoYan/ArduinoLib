@@ -61,7 +61,6 @@ MicroPoly_class::MicroPoly_class() {
   wakeEventFlag = false;
   wakingOvertime = 0;
   pinTriggerState = true;  //it will be run when start
-  
   timerState = true;  //it will be run when start
 
   interruptLogic = OR;
@@ -168,16 +167,7 @@ void MicroPoly_class::addPinTrigger( uint8_t pin, uint8_t mode, uint8_t logic )
       break;
     }
   }
-  
-  
-  if (false == result)
-  {
-//    DBG_PRINT_FUNNAME;
-//    DBG_PRINT_VAR(pin);
-//    DBG_PRINTLN( " is not a INT.");
-//    DBG_ASSERT();
-  }
-  
+
 }
 
 /*******************************************************************************
@@ -525,7 +515,6 @@ void MicroPoly_class::setTimer(TimerType_enum type, uint8_t time)
   }
 
   timerCntOut = seconds/period;
-  timerState = false;
 
   prescaler = 0b1001 - i;
 

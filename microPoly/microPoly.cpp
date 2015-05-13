@@ -390,7 +390,7 @@ void MicroPoly_class::updatePinTriggerState()
 
   for ( interruptNum = 0; interruptNum < EXTERNAL_NUM_INTERRUPTS; interruptNum++ )
   {
-    uint8_t &state = a_InterruptManager[interruptNum].state;
+    boolean &state = a_InterruptManager[interruptNum].state;
     if ( INVALID_UINT8 !=  state )
     {
       pin = a_interruptMapPin[interruptNum];

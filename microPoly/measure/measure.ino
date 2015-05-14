@@ -26,10 +26,10 @@
    on the LCD screen. After some seconds, it will go to sleep again.
 
  ***************************** Hardware *************************************
-  uHex Pin  --  Module
+  uHex Pin  --  Module                      --     Library
     2           Button  (High lever when pressed)
-    9           DHT11
-   I2C          LCD1602
+    9           DHT11                              http://www.dfrobot.com/index.php?route=product/product&product_id=174&search=dht11&description=true
+   I2C          LCD1602                            http://www.dfrobot.com/index.php?route=product/product&product_id=135&search=lcd&description=true
  ******************************************************************************/
 
 #include <Wire.h> 
